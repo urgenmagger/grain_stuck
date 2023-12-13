@@ -19,11 +19,6 @@ export const HomeScreenStack = () => {
         component={VehicleDetails}
         options={{ headerShown: false }}
       />
-      <HomeStackComp.Screen
-        name={Screens.MapScreen}
-        component={MapScreen}
-        options={{ headerShown: false }}
-      />
     </HomeStackComp.Navigator>
   );
 };

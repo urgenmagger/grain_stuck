@@ -15,10 +15,10 @@ export type RootStackList = {
   [Screens.Settings]: undefined;
   [Screens.HomeScreen]: undefined;
   [Screens.VehicleDetails]: undefined;
+  [Screens.MapScreen]: undefined;
 };
 
 export type HomeStackList = {
   [Screens.HomeScreen]: undefined;
   [Screens.VehicleDetails]: undefined;
-  [Screens.MapScreen]: undefined;
 };

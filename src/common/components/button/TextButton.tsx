@@ -17,5 +17,7 @@ export const TextButton: FC<Props> = ({ label, onPress }) => {
 
 const styles = () =>
   StyleSheet.create({
-    buttonText: {},
+    buttonText: {
+      color: "black",
+    },
   });
