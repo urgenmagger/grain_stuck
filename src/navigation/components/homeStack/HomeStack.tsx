@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import { HomeScreen, VehicleDetails } from "../../../screens";
+import { HomeScreen, MapScreen, VehicleDetails } from "../../../screens";
 import { HomeStackList, RootStackList, Screens } from "../../typeNav";
 
 const HomeStackComp = createStackNavigator<HomeStackList>();
@@ -17,6 +17,11 @@ export const HomeScreenStack = () => {
       <HomeStackComp.Screen
         name={Screens.VehicleDetails}
         component={VehicleDetails}
+        options={{ headerShown: false }}
+      />
+      <HomeStackComp.Screen
+        name={Screens.MapScreen}
+        component={MapScreen}
         options={{ headerShown: false }}
       />
     </HomeStackComp.Navigator>

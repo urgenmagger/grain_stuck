@@ -3,11 +3,11 @@ import { Text, StyleSheet, View } from "react-native";
 
 interface Props {}
 
-export const HomeScreen: FC<Props> = () => {
+export const MapScreen: FC<Props> = () => {
   const componentStyle = styles();
   return (
     <View style={{ ...componentStyle.container }}>
-      <Text>HomeScreen</Text>
+      <Text>MapScreen</Text>
     </View>
   );
 };

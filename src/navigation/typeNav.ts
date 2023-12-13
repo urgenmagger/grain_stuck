@@ -3,6 +3,7 @@ export enum Screens {
   Settings = "Settings",
   HomeScreen = "HomeScreen",
   VehicleDetails = "VehicleDetails",
+  MapScreen = "MapScreen",
 }
 
 export enum TabNames {
@@ -19,4 +20,5 @@ export type RootStackList = {
 export type HomeStackList = {
   [Screens.HomeScreen]: undefined;
   [Screens.VehicleDetails]: undefined;
+  [Screens.MapScreen]: undefined;
 };

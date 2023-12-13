@@ -1,3 +1,4 @@
-export * from "./HomeScreen";
-export * from "./Settings";
-export * from "./VehicleDetails";
+export * from "./homeScreen";
+export * from "./settings";
+export * from "./vehicleDetails";
+export * from "./mapScreen";
