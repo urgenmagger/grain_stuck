@@ -1,18 +1,28 @@
 import React, { FC } from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
 import { useTranslation } from "../../../../common/components/hooks/translate";
 
 interface Props {
   title: string;
   driverName: string;
   category: string;
+  onPress: (title: string) => void;
 }
 
-export const VehicleCard: FC<Props> = ({ title, driverName, category }) => {
+export const VehicleCard: FC<Props> = ({
+  onPress,
+  title,
+  driverName,
+  category,
+}) => {
   const { t } = useTranslation();
 
+  const handlePress = () => {
+    onPress(title);
+  };
+
   return (
-    <View style={styles.container}>
+    <TouchableOpacity onPress={handlePress} style={styles.container}>
       <Text>
         {t("VEHICLE")}: {title}
       </Text>
@@ -22,7 +32,7 @@ export const VehicleCard: FC<Props> = ({ title, driverName, category }) => {
       <Text>
         {t("CATEGORY")}: {category}
       </Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
