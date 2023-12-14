@@ -2,15 +2,11 @@ import React, { FC } from "react";
 import { Text, StyleSheet, View } from "react-native";
 import { useGetUsers } from "../../api/hooks/useGetUsers";
 import { ToggleButton } from "../../common/components/toggleButton";
-import { UserList } from "./components/userList";
 import { TextButton } from "../../common/components/button/TextButton";
 import { SEE_MAP } from "../../common/C";
 import { useNavigation } from "@react-navigation/native";
-import {
-  HomeStackList,
-  RootStackList,
-  Screens,
-} from "../../navigation/typeNav";
+import { Screens } from "../../navigation/typeNav";
+import { VehicleList } from "./components/vehicleList";
 
 interface Props {}
 
@@ -24,7 +20,7 @@ export const HomeScreen: FC<Props> = () => {
   return (
     <View style={{ ...componentStyle.container }}>
       <TextButton label={SEE_MAP} onPress={goMapScreen} />
-      <UserList data={data || { vehicles: [] }} />
+      <VehicleList data={data || { vehicles: [] }} />
     </View>
   );
 };

@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { VehiclesData } from "../../common/types/users";
+import { VehiclesData } from "../../common/types/vehicle";
 import { userService } from "../services/user.service";
 
 interface ReturnHook {

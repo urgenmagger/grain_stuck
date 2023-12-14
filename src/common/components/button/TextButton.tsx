@@ -19,5 +19,6 @@ const styles = () =>
   StyleSheet.create({
     buttonText: {
       color: "black",
+      textDecorationLine: "underline",
     },
   });

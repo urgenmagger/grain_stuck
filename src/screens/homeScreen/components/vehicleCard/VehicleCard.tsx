@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Text, StyleSheet, View } from "react-native";
+import { CATEGORY, NAME, VEHICLE } from "../../../../common/C";
 
 interface Props {
   title: string;
@@ -7,13 +8,19 @@ interface Props {
   category: string;
 }
 
-export const UserCard: FC<Props> = ({ title, driverName, category }) => {
+export const VehicleCard: FC<Props> = ({ title, driverName, category }) => {
   const componentStyle = styles();
   return (
     <View style={{ ...componentStyle.container }}>
-      <Text>{title}</Text>
-      <Text>{driverName}</Text>
-      <Text>{category}</Text>
+      <Text>
+        {VEHICLE}: {title}
+      </Text>
+      <Text>
+        {NAME}: {driverName}
+      </Text>
+      <Text>
+        {CATEGORY}: {category}
+      </Text>
     </View>
   );
 };

@@ -1,0 +1,136 @@
+{
+  "vehicles": [
+    {
+      "title": "ТС #1",
+      "driverName": "Иван Иванов",
+      "category": "Грузовой",
+      "coordinates": {
+        "latitude": 45.49200306314556,
+        "longitude": 38.21488006040454,
+        "latitudeDelta": 2.865430048938485,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #2",
+      "driverName": "Петр Петров",
+      "category": "Пассажирский",
+      "coordinates": {
+        "latitude": 46.17457072888284,
+        "longitude": 38.50766798481345,
+        "latitudeDelta": 2.830493021225358,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #3",
+      "driverName": "Мария Сидорова",
+      "category": "Спецтранспорт",
+      "coordinates": {
+        "latitude": 45.21341320712256,
+        "longitude": 36.35062778368592,
+        "latitudeDelta": 2.879573059668523,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #4",
+      "driverName": "Анна Кузнецова",
+      "category": "Грузовой",
+      "coordinates": {
+        "latitude": 45.23411097852461,
+        "longitude": 36.35062778368592,
+        "latitudeDelta": 2.8785246437753287,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #5",
+      "driverName": "Алексей Смирнов",
+      "category": "Пассажирский",
+      "coordinates": {
+        "latitude": 45.277264637055865,
+        "longitude": 36.35062778368592,
+        "latitudeDelta": 2.8763375497971353,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #6",
+      "driverName": "Наталья Иванова",
+      "category": "Спецтранспорт",
+      "coordinates": {
+        "latitude": 45.34090958804042,
+        "longitude": 36.41710566356778,
+        "latitudeDelta": 2.8731089493671007,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #7",
+      "driverName": "Дмитрий Попов",
+      "category": "Грузовой",
+      "coordinates": {
+        "latitude": 45.40345216225023,
+        "longitude": 36.58751646056772,
+        "latitudeDelta": 2.869932818544207,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #8",
+      "driverName": "Ольга Морозова",
+      "category": "Пассажирский",
+      "coordinates": {
+        "latitude": 45.21341320712256,
+        "longitude": 36.35062778368592,
+        "latitudeDelta": 2.879573059668523,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #9",
+      "driverName": "Артем Лебедев",
+      "category": "Спецтранспорт",
+      "coordinates": {
+        "latitude": 45.24301643368025,
+        "longitude": 36.35062778368592,
+        "latitudeDelta": 2.878073435190565,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #10",
+      "driverName": "Елена Васнецова",
+      "category": "Грузовой",
+      "coordinates": {
+        "latitude": 45.37668138647234,
+        "longitude": 36.51102991774678,
+        "latitudeDelta": 2.871292750875419,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #11",
+      "driverName": "Владимир Игнатьев",
+      "category": "Пассажирский",
+      "coordinates": {
+        "latitude": 45.42867875715527,
+        "longitude": 36.69057196006179,
+        "latitudeDelta": 2.868650756143083,
+        "longitudeDelta": 2.0000002160668373
+      }
+    },
+    {
+      "title": "ТС #12",
+      "driverName": "Светлана Федорова",
+      "category": "Спецтранспорт",
+      "coordinates": {
+        "latitude": 45.42867875715527,
+        "longitude": 36.69057196006179,
+        "latitudeDelta": 2.868650756143083,
+        "longitudeDelta": 2.0000002160668373
+      }
+    }
+  ]
+}
