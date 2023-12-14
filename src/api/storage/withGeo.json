@@ -1,9 +1,11 @@
 {
   "vehicles": [
     {
-      "title": "ТС #1",
+      "title": "#1",
       "driverName": "Иван Иванов",
       "category": "Грузовой",
+      "categoryId": 3,
+      "phone": "0980000001",
       "coordinates": {
         "latitude": 45.49200306314556,
         "longitude": 38.21488006040454,
@@ -12,9 +14,11 @@
       }
     },
     {
-      "title": "ТС #2",
+      "title": "#2",
       "driverName": "Петр Петров",
       "category": "Пассажирский",
+      "categoryId": 2,
+      "phone": "0980000002",
       "coordinates": {
         "latitude": 46.17457072888284,
         "longitude": 38.50766798481345,
@@ -23,9 +27,12 @@
       }
     },
     {
-      "title": "ТС #3",
+      "title": "#3",
       "driverName": "Мария Сидорова",
       "category": "Спецтранспорт",
+
+      "categoryId": 1,
+      "phone": "0980000003",
       "coordinates": {
         "latitude": 45.21341320712256,
         "longitude": 36.35062778368592,
@@ -34,9 +41,11 @@
       }
     },
     {
-      "title": "ТС #4",
+      "title": "#4",
       "driverName": "Анна Кузнецова",
       "category": "Грузовой",
+      "categoryId": 3,
+      "phone": "0980000004",
       "coordinates": {
         "latitude": 45.23411097852461,
         "longitude": 36.35062778368592,
@@ -45,9 +54,11 @@
       }
     },
     {
-      "title": "ТС #5",
+      "title": "#5",
       "driverName": "Алексей Смирнов",
       "category": "Пассажирский",
+      "categoryId": 2,
+      "phone": "0980000005",
       "coordinates": {
         "latitude": 45.277264637055865,
         "longitude": 36.35062778368592,
@@ -56,9 +67,11 @@
       }
     },
     {
-      "title": "ТС #6",
+      "title": "#6",
       "driverName": "Наталья Иванова",
       "category": "Спецтранспорт",
+      "categoryId": 1,
+      "phone": "0980000006",
       "coordinates": {
         "latitude": 45.34090958804042,
         "longitude": 36.41710566356778,
@@ -67,9 +80,11 @@
       }
     },
     {
-      "title": "ТС #7",
+      "title": "#7",
       "driverName": "Дмитрий Попов",
       "category": "Грузовой",
+      "categoryId": 3,
+      "phone": "0980000007",
       "coordinates": {
         "latitude": 45.40345216225023,
         "longitude": 36.58751646056772,
@@ -78,9 +93,11 @@
       }
     },
     {
-      "title": "ТС #8",
+      "title": "#8",
       "driverName": "Ольга Морозова",
       "category": "Пассажирский",
+      "categoryId": 2,
+      "phone": "0980000008",
       "coordinates": {
         "latitude": 45.21341320712256,
         "longitude": 36.35062778368592,
@@ -89,9 +106,11 @@
       }
     },
     {
-      "title": "ТС #9",
+      "title": "#9",
       "driverName": "Артем Лебедев",
       "category": "Спецтранспорт",
+      "categoryId": 1,
+      "phone": "0980000009",
       "coordinates": {
         "latitude": 45.24301643368025,
         "longitude": 36.35062778368592,
@@ -100,9 +119,11 @@
       }
     },
     {
-      "title": "ТС #10",
+      "title": "#10",
       "driverName": "Елена Васнецова",
       "category": "Грузовой",
+      "categoryId": 3,
+      "phone": "0980000010",
       "coordinates": {
         "latitude": 45.37668138647234,
         "longitude": 36.51102991774678,
@@ -111,9 +132,11 @@
       }
     },
     {
-      "title": "ТС #11",
+      "title": "#11",
       "driverName": "Владимир Игнатьев",
       "category": "Пассажирский",
+      "categoryId": 2,
+      "phone": "0980000011",
       "coordinates": {
         "latitude": 45.42867875715527,
         "longitude": 36.69057196006179,
@@ -122,9 +145,11 @@
       }
     },
     {
-      "title": "ТС #12",
+      "title": "#12",
       "driverName": "Светлана Федорова",
       "category": "Спецтранспорт",
+      "categoryId": 1,
+      "phone": "0980000012",
       "coordinates": {
         "latitude": 45.42867875715527,
         "longitude": 36.69057196006179,

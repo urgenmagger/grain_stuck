@@ -2,7 +2,9 @@ import { Language } from "./types/common";
 
 export const localization = {
   [Language.Russian]: {
+    ALL: "Все",
     NAME: "Имя",
+    VEHICLE: "ТС",
     MAIN: "Главная",
     PHONE: "Телефон",
     CALL: "Позвонить",
@@ -14,38 +16,36 @@ export const localization = {
     SEE_MAP: "Посмотреть на карте",
     CATEGORY_SPECIAL: "Спецтранспорт",
     CATEGORY_PASSENGER: "Пассажирский",
-    VEHICLE: "ТС",
-    ALL: "Все",
   },
   [Language.English]: {
+    ALL: "All",
     NAME: "Name",
     MAIN: "Main",
-    PHONE: "Phone",
     CALL: "Call",
+    PHONE: "Phone",
     WRITE: "Write",
+    VEHICLE: "Vehicle",
     SETTINGS: "Settings",
     CATEGORY: "Category",
-    CATEGORY_CARGO: "Cargo",
     SEE_LIST: "See List",
     SEE_MAP: "See on Map",
+    CATEGORY_CARGO: "Cargo",
     CATEGORY_SPECIAL: "Special",
     CATEGORY_PASSENGER: "Passenger",
-    VEHICLE: "Vehicle",
-    ALL: "All",
   },
 };
 export type LocalizationKeys =
   | "NAME"
   | "MAIN"
-  | "PHONE"
   | "CALL"
+  | "ALL"
+  | "PHONE"
   | "WRITE"
+  | "SEE_MAP"
+  | "VEHICLE"
   | "SETTINGS"
   | "CATEGORY"
-  | "CATEGORY_CARGO"
   | "SEE_LIST"
-  | "SEE_MAP"
+  | "CATEGORY_CARGO"
   | "CATEGORY_SPECIAL"
-  | "CATEGORY_PASSENGER"
-  | "VEHICLE"
-  | "ALL";
+  | "CATEGORY_PASSENGER";

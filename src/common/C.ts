@@ -14,4 +14,4 @@ export const VEHICLE = "ТС";
 export const ALL = "Все";
 
 export const API_URL =
-  "https://run.mocky.io/v3/afb137f8-423e-4ecd-a190-5a5f2f1bc5d0";
+  "https://run.mocky.io/v3/92a2cf5d-9237-4a3b-a10e-f43872d0092a";
