@@ -1,8 +1,8 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import { HomeScreen, MapScreen, VehicleDetails } from "../../../screens";
-import { HomeStackList, RootStackList, Screens } from "../../typeNav";
+import { HomeStackList, Screens } from "../../typeNav";
+import { HomeScreen, VehicleDetails } from "../../../screens";
 
 const HomeStackComp = createStackNavigator<HomeStackList>();
 

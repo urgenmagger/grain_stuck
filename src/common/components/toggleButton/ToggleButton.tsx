@@ -1,14 +1,19 @@
 import React, { FC, useState } from "react";
-import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
-import { SEE_LIST, SEE_MAP } from "../../C";
+import { Text, StyleSheet, TouchableOpacity } from "react-native";
 
-interface Props {}
+interface Props {
+  label: string;
+  invertLabel: string;
+  onToggle: (isTriggered: boolean) => void;
+}
 
-export const ToggleButton: FC<Props> = () => {
+export const ToggleButton: FC<Props> = ({ label, invertLabel, onToggle }) => {
   const [isTriggered, setIsTriggered] = useState(false);
 
   const handlePress = () => {
-    setIsTriggered(!isTriggered);
+    const newTriggerState = !isTriggered;
+    setIsTriggered(newTriggerState);
+    onToggle(newTriggerState);
   };
 
   const componentStyle = styles(isTriggered);
@@ -18,7 +23,7 @@ export const ToggleButton: FC<Props> = () => {
       style={{ ...componentStyle.container }}
     >
       <Text style={{ ...componentStyle.triggerText }}>
-        {isTriggered ? SEE_MAP : SEE_LIST}
+        {isTriggered ? label : invertLabel}
       </Text>
     </TouchableOpacity>
   );

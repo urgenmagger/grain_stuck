@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Text, StyleSheet, View } from "react-native";
-import { CATEGORY, NAME, VEHICLE } from "../../../../common/C";
+import { useTranslation } from "../../../../common/components/hooks/translate";
 
 interface Props {
   title: string;
@@ -9,30 +9,30 @@ interface Props {
 }
 
 export const VehicleCard: FC<Props> = ({ title, driverName, category }) => {
-  const componentStyle = styles();
+  const { t } = useTranslation();
+
   return (
-    <View style={{ ...componentStyle.container }}>
+    <View style={styles.container}>
       <Text>
-        {VEHICLE}: {title}
+        {t("VEHICLE")}: {title}
       </Text>
       <Text>
-        {NAME}: {driverName}
+        {t("NAME")}: {driverName}
       </Text>
       <Text>
-        {CATEGORY}: {category}
+        {t("CATEGORY")}: {category}
       </Text>
     </View>
   );
 };
 
-const styles = () =>
-  StyleSheet.create({
-    container: {
-      backgroundColor: "white",
-      borderWidth: 0.5,
-      borderColor: "gray",
-      borderRadius: 15,
-      padding: 20,
-      marginTop: 20,
-    },
-  });
+const styles = StyleSheet.create({
+  container: {
+    padding: 20,
+    marginTop: 20,
+    borderWidth: 0.5,
+    borderRadius: 15,
+    borderColor: "gray",
+    backgroundColor: "white",
+  },
+});

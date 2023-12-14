@@ -1,11 +1,13 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { Screens, TabNames, Tabs } from "../../typeNav";
-import { HomeScreen, Settings } from "../../../screens";
+import { TabNames } from "../../typeNav";
+import { Settings } from "../../../screens";
 import { HomeScreenStack } from "../homeStack";
+import { useTranslation } from "../../../common/components/hooks/translate";
 
 export const TabBar = () => {
   const Tab = createBottomTabNavigator();
+  const { t } = useTranslation();
 
   return (
     <Tab.Navigator
@@ -17,12 +19,12 @@ export const TabBar = () => {
       })}
     >
       <Tab.Screen
-        options={{ title: "Главная" }}
+        options={{ title: t("MAIN") }}
         name={TabNames.HomeTab}
         component={HomeScreenStack}
       />
       <Tab.Screen
-        options={{ title: "Настройки" }}
+        options={{ title: t("SETTINGS") }}
         name={TabNames.SettingsTab}
         component={Settings}
       />

@@ -1,18 +1,35 @@
 import React, { FC } from "react";
 import { Text, StyleSheet, View } from "react-native";
+import { ToggleButton } from "../../common/components/toggleButton";
+import { Language } from "../../common/types/common";
+import { useLocalContext } from "../../api/providers/LocalizationProvider";
 
-interface Props {}
+export const Settings: FC = () => {
+  const { setLang } = useLocalContext();
 
-export const Settings: FC<Props> = () => {
-  const componentStyle = styles();
+  const handleToggle = (isTriggered: boolean) => {
+    if (isTriggered) {
+      setLang(Language.Russian);
+    } else {
+      setLang(Language.English);
+    }
+  };
+
   return (
-    <View style={{ ...componentStyle.container }}>
-      <Text>Settings</Text>
+    <View style={styles.container}>
+      <ToggleButton
+        onToggle={handleToggle}
+        label={Language.Russian}
+        invertLabel={Language.English}
+      />
     </View>
   );
 };
 
-const styles = () =>
-  StyleSheet.create({
-    container: {},
-  });
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
