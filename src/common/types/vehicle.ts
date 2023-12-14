@@ -1,10 +1,18 @@
 import { Language } from "./common";
+
+export interface Coordinates {
+  latitude: number;
+  longitude: number;
+  latitudeDelta: number;
+  longitudeDelta: number;
+}
 export interface Vehicle {
   categoryId: number;
   phone: string;
   title: string;
   driverName: string;
   category: VehicleCategory;
+  coordinates: Coordinates;
 }
 
 export interface VehiclesData {

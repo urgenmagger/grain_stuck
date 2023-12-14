@@ -13,11 +13,13 @@ import {
   VehiclesData,
   categoryMap,
 } from "../../common/types/vehicle";
+import { useFilteredDataContext } from "../../api/providers/FilteredDataProvider";
 
 export const HomeScreen: FC = () => {
   const navigation = useNavigation();
   const { t } = useTranslation();
   const { data } = useGetUsers();
+  const { setFilteredDataContext } = useFilteredDataContext();
 
   const [selectedCategory, setSelectedCategory] = useState<VehicleCategory[]>(
     []
@@ -28,6 +30,7 @@ export const HomeScreen: FC = () => {
   });
 
   const goMapScreen = () => {
+    setFilteredDataContext(filteredData);
     navigation.navigate(Screens.MapScreen);
   };
 
