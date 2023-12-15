@@ -13,12 +13,13 @@ import { Screens } from "../../navigation/typeNav";
 import { VehicleList } from "./components/vehicleList";
 import { CategoryBlock } from "./components/categoryBlock";
 import { useTranslation } from "../../common/components/hooks/translate";
+import { FullScreenLoader } from "../../common/components/FullScreenLoader";
 import { useFilteredDataContext } from "../../api/providers/FilteredDataProvider";
 
 export const HomeScreen: FC = () => {
   const navigation = useNavigation();
   const { t } = useTranslation();
-  const { data } = useGetVehicles();
+  const { data, isLoading } = useGetVehicles();
   const { setFilteredDataContext } = useFilteredDataContext();
 
   const [selectedCategory, setSelectedCategory] = useState<VehicleCategory[]>(
@@ -73,6 +74,7 @@ export const HomeScreen: FC = () => {
 
   return (
     <View style={styles.container}>
+      {isLoading && <FullScreenLoader />}
       <CategoryBlock onCategoryPress={handleCategoryPress} />
       <TextButton
         marginBottom={20}
