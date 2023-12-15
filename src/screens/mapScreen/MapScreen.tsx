@@ -1,18 +1,23 @@
 import React, { FC } from "react";
-import { Text, StyleSheet, View } from "react-native";
-import MapView, { Marker, PROVIDER_GOOGLE, Region } from "react-native-maps";
+import { StyleSheet, View } from "react-native";
+import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
+
+import { INIT_REGION } from "../../common/C";
 import { useFilteredDataContext } from "../../api/providers/FilteredDataProvider";
-import { Vehicle } from "../../common/types/vehicle";
+import { TextButton } from "../../common/components/buttons/textButton/TextButton";
+import { useNavigation } from "@react-navigation/native";
+import { FilledButton } from "../../common/components/buttons/filledButton/FilledButton";
+import { screenWidth } from "../../utils/widthScreen";
+import { useTranslation } from "../../common/components/hooks/translate";
 
 interface Props {}
 
-const INIT_REGION = {
-  latitude: 44.7235,
-  longitude: 37.7676,
-  latitudeDelta: 4,
-  longitudeDelta: 4,
-};
 export const MapScreen: FC<Props> = () => {
+  const navigation = useNavigation();
+  const { t } = useTranslation();
+  const handleGoBack = () => {
+    navigation.goBack();
+  };
   const componentStyle = styles();
 
   const { filteredData } = useFilteredDataContext();
@@ -33,6 +38,9 @@ export const MapScreen: FC<Props> = () => {
 
   return (
     <View style={{ ...componentStyle.container }}>
+      <View style={{ ...componentStyle.button }}>
+        <FilledButton label={t("SEE_LIST")} onPress={handleGoBack} />
+      </View>
       <MapView
         showsMyLocationButton
         showsUserLocation
@@ -54,6 +62,14 @@ const styles = () =>
   StyleSheet.create({
     container: {
       flex: 1,
+    },
+    button: {
+      position: "absolute",
+      top: 700,
+      left: "50%",
+      zIndex: 200,
+      width: "90%",
+      transform: [{ translateX: -screenWidth * 0.45 }],
     },
     map: {
       width: "100%",

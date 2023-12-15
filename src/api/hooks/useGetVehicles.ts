@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { VehiclesData } from "../../common/types/vehicle";
-import { userService } from "../services/user.service";
+import { vehicleService } from "../services/vehicle.service";
 
 interface ReturnHook {
   data?: VehiclesData;
@@ -8,11 +8,11 @@ interface ReturnHook {
   error?: unknown;
 }
 
-export const useGetUsers = (): ReturnHook => {
+export const useGetVehicles = (): ReturnHook => {
   const { isLoading, data, error } = useQuery<VehiclesData, unknown>({
-    queryKey: ["user"],
+    queryKey: ["vehicle"],
     queryFn: async () => {
-      const response = await userService.get();
+      const response = await vehicleService.get();
       return response.data;
     },
   });

@@ -12,7 +12,7 @@ export const localization = {
     SETTINGS: "Настройки",
     CATEGORY: "Категория",
     CATEGORY_CARGO: "Грузовой",
-    SEE_LIST: "Посмотреть список",
+    SEE_LIST: "Смотреть список",
     SEE_MAP: "Посмотреть на карте",
     CATEGORY_SPECIAL: "Спецтранспорт",
     CATEGORY_PASSENGER: "Пассажирский",

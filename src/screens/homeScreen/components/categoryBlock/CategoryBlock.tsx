@@ -2,7 +2,7 @@ import React, { FC, useCallback } from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
 
 import { VehicleCategory, categories } from "../../../../common/types/vehicle";
-import { CategoryButton } from "../../../../common/components/categoryButton/CategoryButton";
+import { CategoryButton } from "../../../../common/components/buttons/categoryButton/CategoryButton";
 import { useTranslation } from "../../../../common/components/hooks/translate";
 
 interface Props {

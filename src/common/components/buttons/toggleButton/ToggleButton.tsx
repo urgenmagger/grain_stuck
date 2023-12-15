@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const ToggleButton: FC<Props> = ({ label, invertLabel, onToggle }) => {
-  const [isTriggered, setIsTriggered] = useState(false);
+  const [isTriggered, setIsTriggered] = useState(true);
 
   const handlePress = () => {
     const newTriggerState = !isTriggered;

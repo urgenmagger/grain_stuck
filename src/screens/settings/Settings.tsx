@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import { Text, StyleSheet, View } from "react-native";
-import { ToggleButton } from "../../common/components/toggleButton";
+import { StyleSheet, View } from "react-native";
+import { ToggleButton } from "../../common/components/buttons/toggleButton";
 import { Language } from "../../common/types/common";
 import { useLocalContext } from "../../api/providers/LocalizationProvider";
 
@@ -19,8 +19,8 @@ export const Settings: FC = () => {
     <View style={styles.container}>
       <ToggleButton
         onToggle={handleToggle}
-        label={Language.Russian}
-        invertLabel={Language.English}
+        label={Language.English}
+        invertLabel={Language.Russian}
       />
     </View>
   );

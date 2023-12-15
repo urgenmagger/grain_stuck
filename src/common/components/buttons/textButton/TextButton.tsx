@@ -3,7 +3,7 @@ import { Text, StyleSheet, TouchableOpacity } from "react-native";
 
 interface Props {
   label: string;
-  marginBottom: number;
+  marginBottom?: number;
   onPress: () => void;
 }
 
@@ -16,7 +16,7 @@ export const TextButton: FC<Props> = ({ label, onPress, marginBottom }) => {
   );
 };
 
-const styles = (marginBottom: number) =>
+const styles = (marginBottom?: number) =>
   StyleSheet.create({
     buttonText: {
       color: "black",

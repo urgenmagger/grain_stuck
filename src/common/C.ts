@@ -13,5 +13,12 @@ export const CATEGORY_PASSENGER = "Пассажирский";
 export const VEHICLE = "ТС";
 export const ALL = "Все";
 
+export const INIT_REGION = {
+  latitude: 44.7235,
+  longitude: 37.7676,
+  latitudeDelta: 4,
+  longitudeDelta: 4,
+};
+
 export const API_URL =
   "https://run.mocky.io/v3/92a2cf5d-9237-4a3b-a10e-f43872d0092a";

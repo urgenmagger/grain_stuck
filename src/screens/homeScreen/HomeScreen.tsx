@@ -1,24 +1,24 @@
 import React, { FC, useEffect, useState } from "react";
 import { StyleSheet, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { useGetUsers } from "../../api/hooks/useGetUsers";
-import { TextButton } from "../../common/components/button/TextButton";
+import { useGetVehicles } from "../../api/hooks/useGetVehicles";
+import { TextButton } from "../../common/components/buttons/textButton/TextButton";
 
+import {
+  categoryMap,
+  VehiclesData,
+  VehicleCategory,
+} from "../../common/types/vehicle";
 import { Screens } from "../../navigation/typeNav";
 import { VehicleList } from "./components/vehicleList";
 import { CategoryBlock } from "./components/categoryBlock";
 import { useTranslation } from "../../common/components/hooks/translate";
-import {
-  VehicleCategory,
-  VehiclesData,
-  categoryMap,
-} from "../../common/types/vehicle";
 import { useFilteredDataContext } from "../../api/providers/FilteredDataProvider";
 
 export const HomeScreen: FC = () => {
   const navigation = useNavigation();
   const { t } = useTranslation();
-  const { data } = useGetUsers();
+  const { data } = useGetVehicles();
   const { setFilteredDataContext } = useFilteredDataContext();
 
   const [selectedCategory, setSelectedCategory] = useState<VehicleCategory[]>(
