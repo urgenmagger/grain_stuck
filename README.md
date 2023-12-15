@@ -1,5 +1,5 @@
 <div id="header" align="center">
-<img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702633997/port/test_port.gif" width="400"/>
+<img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702635928/port/port.gif" width="400"/>
 </div>
 
 Проект запускается как обычный проект Expo.
