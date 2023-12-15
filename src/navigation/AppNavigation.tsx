@@ -8,6 +8,7 @@ import { MapScreen } from "../screens";
 
 const Stack = createNativeStackNavigator<RootStackList>();
 
+// корневой stack navigation
 export const AppNavigation = () => {
   return (
     <NavigationContainer>

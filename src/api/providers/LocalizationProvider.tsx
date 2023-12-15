@@ -7,6 +7,13 @@ import React, {
 } from "react";
 import { Language } from "../../common/types/common";
 
+/**
+ * Интерфейс свойств контекста для локализации.
+ *
+ * @interface LocalProps
+ * @property {Language} lang - Текущий язык локализации.
+ * @property {(newLang: Language) => void} setLang - Функция для установки нового языка локализации.
+ */
 export interface LocalProps {
   lang: Language;
   setLang: (newLang: Language) => void;

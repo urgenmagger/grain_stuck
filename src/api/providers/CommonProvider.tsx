@@ -7,6 +7,7 @@ interface Props {
   children: ReactNode | ReactNode[];
 }
 
+// provider обертка
 const CommonProvider: FC<Props> = ({ children }) => {
   return (
     <LocalizationProvider>

@@ -7,6 +7,7 @@ interface Props {
   onToggle: (isTriggered: boolean) => void;
 }
 
+// кнопка переключатель, для локализации
 export const ToggleButton: FC<Props> = ({ label, invertLabel, onToggle }) => {
   const [isTriggered, setIsTriggered] = useState(true);
 

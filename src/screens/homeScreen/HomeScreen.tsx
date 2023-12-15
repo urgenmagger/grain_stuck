@@ -16,6 +16,7 @@ import { useTranslation } from "../../common/components/hooks/translate";
 import { FullScreenLoader } from "../../common/components/FullScreenLoader";
 import { useFilteredDataContext } from "../../api/providers/FilteredDataProvider";
 
+// Главный экран
 export const HomeScreen: FC = () => {
   const navigation = useNavigation();
   const { t } = useTranslation();
@@ -35,6 +36,13 @@ export const HomeScreen: FC = () => {
     navigation.navigate(Screens.MapScreen);
   };
 
+  /**
+   * Обработчик нажатия на категорию транспортного средства.
+   *
+   *
+   * @param {VehicleCategory} category - Выбранная категория транспортного средства.
+   * @returns {void}
+   */
   const handleCategoryPress = (category: VehicleCategory) => {
     setSelectedCategory((prevSelectedCategory) => {
       if (prevSelectedCategory.length === 0) {
@@ -52,6 +60,13 @@ export const HomeScreen: FC = () => {
     });
   };
 
+  /**
+   * В реальном проекте фильтры будут браться из бэкенда
+   * Применяет фильтр по выбранным категориям и обновляет отфильтрованные данные.
+   *
+   * @param {VehicleCategory[] | undefined} categories - Выбранные категории транспортных средств.
+   * @returns {void}
+   */
   const applyFilter = (categories: VehicleCategory[] | undefined) => {
     if (!categories || categories.length === 0) {
       setFilteredData({ vehicles: data?.vehicles || [] });

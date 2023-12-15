@@ -8,6 +8,7 @@ interface Props {
   onPress: (isActive: boolean) => void;
 }
 
+// кнопка для мультифильтра категорий
 export const CategoryButton: FC<Props> = ({ label, onPress }) => {
   const [isActive, setIsActive] = useState(false);
 

@@ -7,6 +7,7 @@ interface Props {
   onPress: () => void;
 }
 
+// текстовая кнопка
 export const TextButton: FC<Props> = ({ label, onPress, marginBottom }) => {
   const componentStyle = styles(marginBottom);
   return (

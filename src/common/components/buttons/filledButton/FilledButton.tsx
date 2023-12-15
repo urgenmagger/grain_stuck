@@ -7,6 +7,7 @@ interface Props {
   marginTop?: number;
 }
 
+// кнопка с заливкой
 export const FilledButton: FC<Props> = ({ marginTop, label, onPress }) => {
   const componentStyle = styles(marginTop);
   return (

@@ -10,9 +10,8 @@ import { FilledButton } from "../../common/components/buttons/filledButton/Fille
 import { screenWidth } from "../../utils/widthScreen";
 import { useTranslation } from "../../common/components/hooks/translate";
 
-interface Props {}
-
-export const MapScreen: FC<Props> = () => {
+// Экран с катрой на главной
+export const MapScreen: FC = () => {
   const navigation = useNavigation();
   const { t } = useTranslation();
   const handleGoBack = () => {

@@ -9,12 +9,20 @@ import { useTitleContext } from "../../api/providers/TitleProvider";
 import { useTranslation } from "../../common/components/hooks/translate";
 import { FilledButton } from "../../common/components/buttons/filledButton/FilledButton";
 
+// экран деталей TC
 export const VehicleDetails: FC = () => {
   const componentStyle = styles();
   const { t } = useTranslation();
   const { title } = useTitleContext();
   const { data } = useGetVehicles();
 
+  /**
+   * Открывает чат в WhatsApp с предустановленным сообщением.
+   *
+   * @param {string} phone - Номер телефона для открытия чата в WhatsApp.
+   * @param {string} message - Предустановленное сообщение для отправки в чате.
+   * @returns {void}
+   */
   const openWhatsAppChat = (phone: string, message: string) => {
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `whatsapp://send?phone=${phone}&text=${encodedMessage}`;

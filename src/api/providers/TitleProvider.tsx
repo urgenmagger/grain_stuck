@@ -5,6 +5,14 @@ import React, {
   createContext,
   useContext,
 } from "react";
+/**
+ * Интерфейс свойств контекста title, нужен для фильтрации моков,
+ * в реальном проекте все делается проще, через id
+ *
+ * @interface TitleProps
+ * @property {string} title - Текущий title
+ * @property {(newTitle: string) => void} setTitle - Функция для отправки в context title
+ */
 interface TitleProps {
   title: string;
   setTitle: (newTitle: string) => void;

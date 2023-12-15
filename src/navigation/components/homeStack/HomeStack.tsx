@@ -7,6 +7,7 @@ import { useTranslation } from "../../../common/components/hooks/translate";
 
 const HomeStackComp = createStackNavigator<HomeStackList>();
 
+// stack для главнoго таба
 export const HomeScreenStack = () => {
   const { t } = useTranslation();
   return (

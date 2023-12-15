@@ -7,6 +7,13 @@ import React, {
 } from "react";
 import { VehiclesData } from "../../common/types/vehicle";
 
+/**
+ * Интерфейс свойств контекста для отфильтрованных данных о транспортных средствах.
+ *
+ * @interface FilteredDataProps
+ * @property {VehiclesData} filteredData - Отфильтрованные данные о транспортных средствах.
+ * @property {(newData: VehiclesData) => void} setFilteredDataContext - Функция для установки новых отфильтрованных данных.
+ */
 export interface FilteredDataProps {
   filteredData: VehiclesData;
   setFilteredDataContext: (newData: VehiclesData) => void;
