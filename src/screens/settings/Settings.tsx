@@ -4,6 +4,7 @@ import { ToggleButton } from "../../common/components/buttons/toggleButton";
 import { Language } from "../../common/types/common";
 import { useLocalContext } from "../../api/providers/LocalizationProvider";
 
+// экран настроек с выбором языка
 export const Settings: FC = () => {
   const { setLang } = useLocalContext();
 
