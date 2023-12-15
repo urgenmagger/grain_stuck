@@ -16,6 +16,7 @@ export const localization = {
     SEE_MAP: "Посмотреть на карте",
     CATEGORY_SPECIAL: "Спецтранспорт",
     CATEGORY_PASSENGER: "Пассажирский",
+    VEHICLE_DETAILS: "Детали ТС",
   },
   [Language.English]: {
     ALL: "All",
@@ -32,6 +33,7 @@ export const localization = {
     CATEGORY_CARGO: "Cargo",
     CATEGORY_SPECIAL: "Special",
     CATEGORY_PASSENGER: "Passenger",
+    VEHICLE_DETAILS: " Vehicle details",
   },
 };
 export type LocalizationKeys =
@@ -48,4 +50,5 @@ export type LocalizationKeys =
   | "SEE_LIST"
   | "CATEGORY_CARGO"
   | "CATEGORY_SPECIAL"
+  | "VEHICLE_DETAILS"
   | "CATEGORY_PASSENGER";

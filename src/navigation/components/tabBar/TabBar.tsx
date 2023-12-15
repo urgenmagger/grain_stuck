@@ -16,6 +16,7 @@ export const TabBar = () => {
           return null;
         },
         tabBarLabelPosition: "beside-icon",
+        headerShown: route.name !== TabNames.HomeTab,
       })}
     >
       <Tab.Screen

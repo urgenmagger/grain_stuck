@@ -1,6 +1,7 @@
 import React, { FC, ReactNode } from "react";
 import { LocalizationProvider } from "./LocalizationProvider";
 import { FilteredDataProvider } from "./FilteredDataProvider";
+import { TitleProvider } from "./TitleProvider";
 
 interface Props {
   children: ReactNode | ReactNode[];
@@ -9,7 +10,9 @@ interface Props {
 const CommonProvider: FC<Props> = ({ children }) => {
   return (
     <LocalizationProvider>
-      <FilteredDataProvider>{children}</FilteredDataProvider>
+      <TitleProvider>
+        <FilteredDataProvider>{children}</FilteredDataProvider>
+      </TitleProvider>
     </LocalizationProvider>
   );
 };

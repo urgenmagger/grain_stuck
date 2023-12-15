@@ -1,24 +1,29 @@
 import React, { FC } from "react";
 import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
+
+import { useNavigation } from "@react-navigation/native";
 import { useTranslation } from "../../../../common/components/hooks/translate";
+import { useTitleContext } from "../../../../api/providers/TitleProvider";
+import { Screens } from "../../../../navigation/typeNav";
 
 interface Props {
   title: string;
   driverName: string;
   category: string;
-  onPress: (title: string) => void;
 }
 
-export const VehicleCard: FC<Props> = ({
-  onPress,
-  title,
-  driverName,
-  category,
-}) => {
+export const VehicleCard: FC<Props> = ({ title, driverName, category }) => {
+  const navigation = useNavigation();
   const { t } = useTranslation();
+  const { setTitle } = useTitleContext();
+
+  const goToVehicleDetails = () => {
+    navigation.navigate(Screens.VehicleDetails);
+  };
 
   const handlePress = () => {
-    onPress(title);
+    setTitle(title);
+    goToVehicleDetails();
   };
 
   return (

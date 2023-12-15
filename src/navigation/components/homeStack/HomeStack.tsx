@@ -3,21 +3,23 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import { HomeStackList, Screens } from "../../typeNav";
 import { HomeScreen, VehicleDetails } from "../../../screens";
+import { useTranslation } from "../../../common/components/hooks/translate";
 
 const HomeStackComp = createStackNavigator<HomeStackList>();
 
 export const HomeScreenStack = () => {
+  const { t } = useTranslation();
   return (
     <HomeStackComp.Navigator initialRouteName={Screens.HomeScreen}>
       <HomeStackComp.Screen
         name={Screens.HomeScreen}
         component={HomeScreen}
-        options={{ headerShown: false }}
+        options={{ headerTitle: t("MAIN") }}
       />
       <HomeStackComp.Screen
         name={Screens.VehicleDetails}
         component={VehicleDetails}
-        options={{ headerShown: false }}
+        options={{ headerTitle: t("VEHICLE_DETAILS") }}
       />
     </HomeStackComp.Navigator>
   );

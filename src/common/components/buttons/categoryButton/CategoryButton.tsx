@@ -20,7 +20,7 @@ export const CategoryButton: FC<Props> = ({ label, onPress }) => {
   return (
     <TouchableWithoutFeedback onPress={handlePress}>
       <View style={{ ...componentStyle.container }}>
-        <Text>{label}</Text>
+        <Text style={{ ...componentStyle.text }}>{label}</Text>
       </View>
     </TouchableWithoutFeedback>
   );
@@ -33,5 +33,9 @@ const styles = (isActive: boolean) =>
       borderRadius: 15,
       margin: 5,
       backgroundColor: isActive ? "#E41E4E" : "#fff",
+    },
+    text: {
+      color: isActive ? "white" : "black",
+      fontWeight: "600",
     },
   });
