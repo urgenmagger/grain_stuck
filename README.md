@@ -1,11 +1,11 @@
+<div id="header" align="center">
+<img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702633997/port/test_port.gif" width="400"/>
+</div>
+
 Проект запускается как обычный проект Expo.
 [Линк на видео](https://res.cloudinary.com/dywhqlfx7/video/upload/v1702628608/port/test_port.mp4)
 
 Переход на whatsapp не будет работать, в endpoint фейковые телефоны, если подставить нормальные, будет работать.
-
-<div id="header" align="center">
-<img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702633997/port/test_port.gif" width="400"/>
-</div>
 
 # Тестовое задание web-программист (React.Native)
 
