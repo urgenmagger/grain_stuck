@@ -1,12 +1,27 @@
-<div id="header" align="center">
-<img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702635928/port/port.gif" width="400"/>
-</div>
-
 Проект запускается как обычный проект Expo.
+
+После клонирования, установить зависимости командой:  
+`yarn`
+
 [Линк на видео](https://res.cloudinary.com/dywhqlfx7/video/upload/v1702628608/port/test_port.mp4)
 
 Переход на whatsapp не будет работать, в endpoint фейковые телефоны, если подставить нормальные, будет работать.
 
+<div style="display: flex; justify-content: space-between;">
+  <figure>
+    <img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702635928/port/port.gif" width="400" />
+    <figcaption style="text-align: center;">Android</figcaption>
+  </figure>
+  
+  <figure>
+    <img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702880507/port/ios/ios.gif" width="400" />
+    <figcaption style="text-align: center;">IOS</figcaption>
+  </figure>
+</div>
+
+<details>
+  <summary>смотреть TЗ</summary>
+  
 # Тестовое задание web-программист (React.Native)
 
 💡 **Цель задания:** создать мобильное приложение “Отслеживание ТС (транспортные средства)” на React Native, используя API Google Maps или аналог для получения актуального нахождения парка ТС.
@@ -59,3 +74,5 @@
 2. Архитектура решения;
 3. Удобство чтения кода и комментарии;
 4. Удобство проверки.
+
+</details>
