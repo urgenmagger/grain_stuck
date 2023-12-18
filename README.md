@@ -9,12 +9,12 @@
 
 <div style="display: flex; justify-content: space-between;">
   <figure>
-    <img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702635928/port/port.gif" width="400" />
+    <img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702635928/port/port.gif" width="350" />
     <figcaption style="text-align: center;">Android</figcaption>
   </figure>
   
   <figure>
-    <img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702883683/port/ios/ios_1.gif" width="400" />
+    <img src="https://res.cloudinary.com/dywhqlfx7/image/upload/v1702883683/port/ios/ios_1.gif" width="350" />
     <figcaption style="text-align: center;">IOS</figcaption>
   </figure>
 </div>
