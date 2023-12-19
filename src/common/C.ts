@@ -1,3 +1,4 @@
+import { Orientation } from "./C";
 export const ALL = "Все";
 export const NAME = "Имя";
 export const VEHICLE = "ТС";
@@ -27,3 +28,16 @@ export const API_URL =
   "https://run.mocky.io/v3/92a2cf5d-9237-4a3b-a10e-f43872d0092a";
 
 export const WHATSAPP_ALERT = "WhatsApp is not installed on the device";
+
+export const OrientationNumber = {
+  0: "PORTRAIT",
+  1: "PORTRAIT",
+  2: "PORTRAIT",
+  3: "LANDSCAPE",
+  4: "LANDSCAPE",
+};
+
+export const ORIENTATION = {
+  PORTRAIT: "PORTRAIT",
+  LANDSCAPE: "LANDSCAPE",
+};
