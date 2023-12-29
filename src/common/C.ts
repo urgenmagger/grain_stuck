@@ -1,4 +1,3 @@
-import { Orientation } from "./C";
 export const ALL = "Все";
 export const NAME = "Имя";
 export const VEHICLE = "ТС";
@@ -24,10 +23,12 @@ export const INIT_REGION = {
 export const INITIAL_MESSAGE =
   "Добрый день, подскажите пожалуйста, какой номер заказа у вас сейчас в работе";
 
-export const API_URL =
-  "https://run.mocky.io/v3/92a2cf5d-9237-4a3b-a10e-f43872d0092a";
-
+export const API_URL = "https://dummyapi.io/data/v1/user";
+export const TOKEN = "6580fea92392f8de131f2a8c";
 export const WHATSAPP_ALERT = "WhatsApp is not installed on the device";
+
+export const PAGE = 1;
+export const LIMIT = 4;
 
 export const OrientationNumber = {
   0: "PORTRAIT",

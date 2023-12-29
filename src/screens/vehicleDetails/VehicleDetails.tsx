@@ -4,7 +4,7 @@ import { Text, StyleSheet, View } from "react-native";
 import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 
 import { INITIAL_MESSAGE, WHATSAPP_ALERT } from "../../common/C";
-import { useGetVehicles } from "../../api/hooks/useGetVehicles";
+import { useGetVehicles } from "../../api/hooks/useGetImages";
 import { useTitleContext } from "../../api/providers/TitleProvider";
 import { useTranslation } from "../../common/components/hooks/translate";
 import { FilledButton } from "../../common/components/buttons/filledButton/FilledButton";

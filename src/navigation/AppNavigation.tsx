@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { RootStackList, Screens } from "./typeNav";
 import { TabBar } from "./components/tabBar/TabBar";
-import { HomeScreen, MapScreen } from "../screens";
+import { HomeScreen, MapScreen, Settings } from "../screens";
 
 const Stack = createNativeStackNavigator<RootStackList>();
 
@@ -19,15 +19,14 @@ export const AppNavigation = () => {
             component={HomeScreen}
             options={{ headerShown: false }}
           />
-          {/* <Stack.Screen
-            name={Screens.MapScreen}
-            component={MapScreen}
+          <Stack.Screen
+            name={Screens.Settings}
+            component={Settings}
             options={{
-              headerShown: false,
               presentation: "modal",
               animation: "fade_from_bottom",
             }}
-          /> */}
+          />
         </>
       </Stack.Navigator>
     </NavigationContainer>
